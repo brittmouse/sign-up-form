@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+</head>
+<body>
+  <h1>Sign-in form</h1>
+  <form>
+    <fieldset>
+      <legend>Let's do this!</legend>
+
+      <div id="names">
+        <div>
+          <label for="fname">First name:</label>
+          <input type="text" name="fname" id="fname" />
+        </div>
+        <div>
+          <label for="lname">Last name:</label>
+          <input type="text" name="lname" id="lname" />
+        </div>
+      </div>
+
+      <div id="contact_info">
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div>
+          <label for="phone">Phone number:</label>
+          <input type="tel" name="phone" id="phone">
+        </div>
+      </div>
+
+      <div id="pwds">
+        <div>
+          <label for="pwd">Password:</label>
+          <input type="password" name="pwd" id="pwd">
+        </div>
+        <div>
+          <label for="pwd_conf">Confirm password:</label>
+          <input type="password" name="pwd_conf" id="pwd_conf">
+        </div>
+      </div>
+    </fieldset>
+    <button>Create Account</button>
+    <p>Already have a password? <a href="#">Log in</a></p>
+  </form>
+</body>
+</html>

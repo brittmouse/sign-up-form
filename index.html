@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/stylesheet.css">
   <title>Sign-up Form</title>
 </head>
 <body>
@@ -12,36 +14,37 @@
       <legend>Let's do this!</legend>
 
       <div id="names">
-        <div>
+        <div class="box">
           <label for="fname">First name:</label>
           <input type="text" name="fname" id="fname" />
         </div>
-        <div>
+        <div class="box">
           <label for="lname">Last name:</label>
           <input type="text" name="lname" id="lname" />
         </div>
       </div>
 
       <div id="contact_info">
-        <div>
+        <div class="box">
           <label for="email">Email:</label>
           <input type="email" name="email" id="email">
         </div>
-        <div>
+        <div class="box">
           <label for="phone">Phone number:</label>
           <input type="tel" name="phone" id="phone">
         </div>
       </div>
 
       <div id="pwds">
-        <div>
+        <div class="box">
           <label for="pwd">Password:</label>
           <input type="password" name="pwd" id="pwd">
         </div>
-        <div>
+        <div class="box">
           <label for="pwd_conf">Confirm password:</label>
           <input type="password" name="pwd_conf" id="pwd_conf">
         </div>
+
       </div>
     </fieldset>
     <button>Create Account</button>

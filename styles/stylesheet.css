@@ -1,0 +1,19 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  align-self: right;
+  gap: 24px;
+}
+
+#names,
+#contact_info,
+#pwds {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}

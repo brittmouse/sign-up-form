@@ -1,10 +1,28 @@
 body {
+  font-family: Lato, Arial, sans-serif;
   display: flex;
+  background-color: #e3eaf8;
+  color: #37373b;
 }
 
 img {
   height: 100vh;
   width: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagline {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 6px 0;
+  width: 36vw;
 }
 
 fieldset,
@@ -14,7 +32,12 @@ fieldset,
 }
 
 fieldset {
+  background-color: #d7dde9;
+  border: 1px solid #d7dde9;
   width: 68vw;
+  height: 40vh;
+  margin-top: 48px;
+  justify-content: center;
   align-self: right;
   gap: 24px;
 }
@@ -23,10 +46,44 @@ fieldset {
 #contact_info,
 #pwds {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
+  gap: 2.4rem;
+}
+
+.box {
+  gap: 16px;
+  margin-left: 5.4rem;
+}
+
+label {
+  font-size: 1.2rem;
 }
 
 input {
   border: 2px solid #e5e5e5;
   border-radius: 8px;
+}
+
+.submit {
+  display: flex;
+  margin-top: 1.2rem;
+  gap: 2.4rem;
+}
+
+button {
+  height: 5.6vh;
+  width: 9vw;
+  background-color: #37373b;
+  color: #e5e5e5;
+  border: 1px solid #37373b;
+  border-radius: 6px;
+  margin-left: 6.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+a {
+  color: #37373b;
+  font-weight: 700;
+  text-decoration: none;
 }

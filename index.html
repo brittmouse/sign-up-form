@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
   <title>Sign-up Form</title>
 </head>
 
@@ -14,46 +17,51 @@
     <img src="./images/jack-bulmer-b5Kj1jl5MFI-unsplash.jpg"
       alt="A Virginia opossum standing against a rock in the dark of night, surrounded by shrubbery">
   </div>
-  <form>
-    <fieldset>
-      <legend>Let's do this!</legend>
+  <div class="content">
+    <div class="tagline">Do you wanna just go feral? Absolutely unhinged? A menace to society? All while being too cute to hate?</div>
+    <div class="tagline">Then join the Opossum League!</div>
+    <form>
+      <fieldset>
+        <div id="names">
+          <div class="box">
+            <label for="fname">First name:</label>
+            <input type="text" name="fname" id="fname" />
+          </div>
+          <div class="box">
+            <label for="lname">Last name:</label>
+            <input type="text" name="lname" id="lname" />
+          </div>
+        </div>
 
-      <div id="names">
-        <div class="box">
-          <label for="fname">First name:</label>
-          <input type="text" name="fname" id="fname" />
+        <div id="contact_info">
+          <div class="box">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="box">
+            <label for="phone">Phone number:</label>
+            <input type="tel" name="phone" id="phone">
+          </div>
         </div>
-        <div class="box">
-          <label for="lname">Last name:</label>
-          <input type="text" name="lname" id="lname" />
+
+        <div id="pwds">
+          <div class="box">
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pwd">
+          </div>
+          <div class="box">
+            <label for="pwd_conf">Confirm password:</label>
+            <input type="password" name="pwd_conf" id="pwd_conf">
+          </div>
+
         </div>
+      </fieldset>
+
+      <div class="submit">
+        <button>Create Account</button>
+        <p class="login">Already have a password? <a href="#">Log in</a></p>
       </div>
-
-      <div id="contact_info">
-        <div class="box">
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email">
-        </div>
-        <div class="box">
-          <label for="phone">Phone number:</label>
-          <input type="tel" name="phone" id="phone">
-        </div>
-      </div>
-
-      <div id="pwds">
-        <div class="box">
-          <label for="pwd">Password:</label>
-          <input type="password" name="pwd" id="pwd">
-        </div>
-        <div class="box">
-          <label for="pwd_conf">Confirm password:</label>
-          <input type="password" name="pwd_conf" id="pwd_conf">
-        </div>
-
-      </div>
-    </fieldset>
-    <button>Create Account</button>
-    <p>Already have a password? <a href="#">Log in</a></p>
-  </form>
+    </form>
+  </div>
 </body>
 </html>

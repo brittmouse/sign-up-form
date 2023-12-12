@@ -1,7 +1,20 @@
-fieldset {
+body {
+  display: flex;
+}
+
+img {
+  height: 100vh;
+  width: auto;
+}
+
+fieldset,
+.box {
   display: flex;
   flex-direction: column;
-  width: 900px;
+}
+
+fieldset {
+  width: 68vw;
   align-self: right;
   gap: 24px;
 }
@@ -13,7 +26,7 @@ fieldset {
   justify-content: space-evenly;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
+input {
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
 }

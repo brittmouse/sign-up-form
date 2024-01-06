@@ -50,7 +50,7 @@ fieldset {
 #contact_info,
 #pwds {
   display: flex;
-  gap: 2.4rem;
+  gap: 3.6em;
   padding-right: 5vw;
 }
 
@@ -67,6 +67,10 @@ input {
   border: 3px solid #e5e5e5;
   border-radius: 8px;
   padding: 4px;
+}
+
+input:invalid {
+  border-bottom: 2px dashed red;
 }
 
 input:focus {

@@ -1,20 +1,23 @@
 body {
   font-family: Lato, Arial, sans-serif;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   background-color: #e3eaf8;
   color: #37373b;
+  box-sizing: border-box;
 }
 
+.image,
 img {
-  height: 100vh;
+  height: 58em;
   width: auto;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .tagline {
@@ -35,10 +38,11 @@ fieldset {
   background-color: #d7dde9;
   border: 1px solid #d7dde9;
   width: 68vw;
-  height: 40vh;
+  height: 80%;
+  margin: auto;
   margin-top: 48px;
   justify-content: center;
-  align-self: right;
+  align-items: center;
   gap: 24px;
 }
 
@@ -46,8 +50,8 @@ fieldset {
 #contact_info,
 #pwds {
   display: flex;
-  justify-content: left;
   gap: 2.4rem;
+  padding-right: 5vw;
 }
 
 .box {
@@ -60,8 +64,15 @@ label {
 }
 
 input {
-  border: 2px solid #e5e5e5;
+  border: 3px solid #e5e5e5;
   border-radius: 8px;
+  padding: 4px;
+}
+
+input:focus {
+  border: 3px solid blue;
+  border-radius: 8px;
+  box-shadow: 4px 4px 2px #e5e5e5 inset;
 }
 
 .submit {
@@ -71,13 +82,12 @@ input {
 }
 
 button {
-  height: 5.6vh;
-  width: 9vw;
   background-color: #37373b;
   color: #e5e5e5;
   border: 1px solid #37373b;
   border-radius: 6px;
   margin-left: 6.4rem;
+  padding: 12px;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -86,4 +96,8 @@ a {
   color: #37373b;
   font-weight: 700;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

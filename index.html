@@ -13,13 +13,15 @@
 </head>
 
 <body>
-  <div>
+  <div class="image">
     <img src="./images/jack-bulmer-b5Kj1jl5MFI-unsplash.jpg"
       alt="A Virginia opossum standing against a rock in the dark of night, surrounded by shrubbery">
   </div>
   <div class="content">
-    <div class="tagline">Do you wanna just go feral? Absolutely unhinged? A menace to society? All while being too cute to hate?</div>
-    <div class="tagline">Then join the Opossum League!</div>
+    <div class="tagline">
+      <div>Do you wanna just go feral? Absolutely unhinged? A menace to society? All while being too cute to hate?</div>
+      <div>Then join the Opossum League!</div>
+    </div>
     <form>
       <fieldset>
         <div id="names">
@@ -47,11 +49,11 @@
         <div id="pwds">
           <div class="box">
             <label for="pwd">Password:</label>
-            <input type="password" name="pwd" id="pwd">
+            <input type="password" name="pwd" id="pwd" class="error">
           </div>
           <div class="box">
             <label for="pwd_conf">Confirm password:</label>
-            <input type="password" name="pwd_conf" id="pwd_conf">
+            <input type="password" name="pwd_conf" id="pwd_conf" class="error">
           </div>
 
         </div>
